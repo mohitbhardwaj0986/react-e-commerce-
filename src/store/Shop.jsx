@@ -11,19 +11,20 @@ function Shop() {
   return (
     <div>
       <HeroSection />
-      <div className="flex gap-10 flex-wrap justify-center">
-        {products
-          ? products.map((item) => (
-              <Card
-                key={item.id}
-                id={item.id}
-                title={item.title}
-                price={item.price}
-                images={item.images}
-              />
-            ))
-          : null}
-      </div>
+      <div className="flex gap-4 md:gap-6 lg:gap-8 xl:gap-10 flex-wrap justify-center">
+  {products
+    ? products.map((item) => (
+        <Card
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          price={item.price}
+          images={item.images}
+        />
+      ))
+    : null}
+</div>
+
     </div>
   );
 }
