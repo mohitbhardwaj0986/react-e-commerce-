@@ -38,9 +38,9 @@ function Navbar() {
         </div>
       </div>
       <div className="flex items-center gap-20">
-        <Button className="bg-white border-[1px] cursor-pointer border-black">
+        {/* <Button className="bg-white border-[1px] cursor-pointer border-black">
           Login
-        </Button>
+        </Button> */}
         <Link to="/cart" className="relative">
           <IoCart className="cursor-pointer text-4xl" />
           <span className="w-4 h-4 bg-red-600 absolute top-0 right-0 rounded-full text-xs text-white text-center font-semibold">

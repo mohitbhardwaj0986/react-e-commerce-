@@ -34,12 +34,12 @@ function Card({ title, price, images, id }) {
           <h1 className="text-3xl text-yellow-600 w-[10%]">****</h1>
         </div>
         <div className="flex gap-2 items-end">
-          <button className="bg-blue-600 text-white px-6 rounded-sm text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg">
+          <button className="bg-blue-600 text-white px-6 rounded-sm ">
             <Link to={`/singleproduct/${id}`}> Detail</Link>
           </button>
           <button
             onClick={() => addToCart()}
-            className="bg-green-600 text-white rounded-sm text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg"
+            className="bg-green-600 text-white rounded-sm px-4"
           >
             Add to cart
           </button>
